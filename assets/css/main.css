@@ -1,0 +1,71 @@
+body {
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.twitter {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    width: 115px;
+}
+
+.main-btn {
+    position: absolute;
+    width: calc(421px - 7%);
+    height: calc(216px - 7%);
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-bg-img {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+
+@media screen and (max-width: 576px){
+
+}
+@media screen and (max-width: 786px){
+    .main-bg-img {
+        position: absolute;
+        left: -940px;
+        top: 0;
+        overflow: scroll;
+        width: 1920px;
+        max-width: 1920px;
+        height: 100%;
+    }
+
+    .main-btn {
+        width: 211px;
+        height: 113px;
+        bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 1400px){
+
+}
+
+
+
