@@ -1,14 +1,30 @@
-body {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html, body {
     overflow: hidden;
+}
+body {
+    position: relative;
+    overflow: hidden;
+}
+.banner {
+    min-height: -webkit-fill-available;
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 .logo {
     position: absolute;
-    left: 30px;
+    left: 45px;
     top: 30px;
     width: 130px;
     height: 130px;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .twitter {
@@ -20,10 +36,12 @@ body {
 
 .main-btn {
     position: absolute;
-    width: calc(421px - 7%);
-    height: calc(216px - 7%);
+    width: calc(421px - 30px);
+    height: calc(216px - 30px);
     bottom: 8px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -35,10 +53,43 @@ body {
 }
 
 
-@media screen and (max-width: 576px){
 
+
+@media screen and (max-width: 1400px){
+    .logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .twitter {
+        width: 100px;
+    }
+
+    .main-btn {
+        width: calc(421px - 150px);
+        height: calc(216px - 75px);
+    }
 }
-@media screen and (max-width: 786px){
+
+@media screen and (max-width: 1200px){
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .twitter {
+        width: 100px;
+    }
+
+    .main-btn {
+        width: calc(421px - 180px);
+        height: calc(216px - 90px);
+    }
+}
+
+
+@media screen and (max-width: 992px){
     .main-bg-img {
         position: absolute;
         left: -940px;
@@ -50,22 +101,60 @@ body {
     }
 
     .main-btn {
-        width: 211px;
-        height: 113px;
-        bottom: 35px;
+        width: 231px;
+        height: 123px;
+        bottom: 2%;
+        left: 60%;
+    }
+
+    .twitter {
+        width: 90px;
+        right: 19px;
+        top: 25px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+        left: 19px;
+        top: 20px;
     }
 }
 
-@media screen and (max-width: 992px){
 
+/* We set the fixed height for mobile landscape because there is not enough height space for the one screen section */
+@media (max-width: 767px) {
+    .hero {
+        height: auto;
+        min-height: 500px;
+    }
 }
-@media screen and (max-width: 1200px){
-
+/* And then again calculate the height for the hero section */
+@media (max-width: 479px) {
+    .hero {
+        height: calc(var(--vh, 1vh) * 100);
+    }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 400px){
+    .main-btn {
+        width: 181px;
+        height: 93px;
+        bottom: 3%;
+        left: 67%;
+    }
 
+    .twitter {
+        width: 70px;
+        right: 15px;
+        top: 15px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        left: 15px;
+        top: 10px;
+    }
 }
-
-
 
