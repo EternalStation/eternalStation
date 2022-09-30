@@ -25,7 +25,7 @@
     <!-- Favicons -->
 
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css?rnd=<?= rand(0, 999) ?>">
 </head>
 <body>
 <!-- Content -->
@@ -33,15 +33,16 @@
     <h1 hidden>Eternal Solution</h1>
     <div class="banner">
         <a href="https://eternalstation.com/">
-            <img class="logo" src="assets/img/logo.jpeg" alt="logo">
+            <img class="logo" src="assets/img/logo.png" alt="logo">
         </a>
-        <img class="main-bg-img" src="assets/img/main.png" alt="Eternal Solution">
+        <img class="main-bg-img desctop" src="assets/img/main.png" alt="Eternal Solution">
+        <img class="mobile" src="assets/img/mobile-bg.png" alt="Eternal Solution">
         <a href="https://eternalstation.notion.site/Eternal-Station-WebSite-Page-5980f26d45224b528e1fb3b8a7bfc525" target="_blank">
             <img class="main-btn" src="assets/img/btn.png" alt="Eternal Solution">
         </a>
-        <a href="https://twitter.com/EternalSTN" target="_blank">
-            <img class="twitter" src="assets/img/twitter.png" alt="twitter">
-        </a>
+<!--        <a href="https://twitter.com/EternalSTN" target="_blank">-->
+<!--            <img class="twitter" src="assets/img/twitter.png" alt="twitter">-->
+<!--        </a>-->
     </div>
 </main>
 <!-- Content -->
